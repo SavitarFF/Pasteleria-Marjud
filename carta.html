@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Marjud</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+        }
+
+        .main-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .product-section {
+            border: 2px solid #8B0000;
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #8B0000;
+            padding-bottom: 20px;
+        }
+
+        .product-image {
+            max-width: 100%;
+            width: 250px;
+            margin-right: 20px;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .product-info h2 {
+            color: #8B0000;
+        }
+
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .price-table, .price-table th, .price-table td {
+            border: 1px solid #8B0000;
+        }
+
+        .price-table th, .price-table td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .category-title {
+            font-size: 45px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: left;
+            color: #8B0000;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .main-container {
+                width: 90%;
+            }
+
+            .product {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .product-image {
+                margin-right: 0;
+                margin-bottom: 20px;
+                width: 80%;
+            }
+
+            .price-table th, .price-table td {
+                padding: 5px;
+            }
+
+            .category-title {
+                font-size: 35px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-body">
+        <div class="container">
+            <div class="row justify-content-center align-items-center py-3">
+                <div class="col-6 col-md-3">
+                    <img src="marjud.jpg" alt="Logo" class="Logo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="whatsapp-container">
+        <a href="" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
+        <div class="container">
+            <a class="navbar-brand" style="color: white" href="#">MARJUD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-color: white; color: white;">
+    <span class="navbar-toggler-icon" style="color: white;"></span>
+</button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carta.html">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sugerencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <h1 class="category-title">BOCADITOS DULCES</h1>
+        <section class="product-section">
+            <div class="product">
+                <img src="conitos.png" alt="Conitos de Manjar" class="product-image">
+                <div class="product-info">
+                    <h2>CONITOS DE MANJAR</h2>
+                    <p>Conito dulce hechos con masa hojaldre rellenos de manjar especial.</p>
+                    <p><strong>PRECIO:</strong></p>
+                    <table class="price-table">
+                        <tr>
+                            <th>Cantidad</th>
+                            <th>¼</th>
+                            <th>½</th>
+                            <th>100</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>S/. 20</td>
+                            <td>S/. 35</td>
+                            <td>S/. 80</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-section">
+            <div class="product">
+                <img src="alfajrores.png" alt="Alfajores" class="product-image">
+                <div class="product-info">
+                    <h2>ALFAJORES</h2>
+                    <p>Hechos con una masa suave rellenos con manjar especial o fudge, pueden ser bañadas con un rico chocolate.</p>
+                    <p><strong>PRECIO:</strong></p>
+                    <table class="price-table">
+                        <tr>
+                            <th>Sabor/cantidad</th>
+                            <th>¼</th>
+                            <th>½</th>
+                            <th>100</th>
+                        </tr>
+                        <tr>
+                            <td>De maicena y anís</td>
+                            <td>S/. 25</td>
+                            <td>S/. 40</td>
+                            <td>S/. 70</td>
+                        </tr>
+                        <tr>
+                            <td>De chocolate</td>
+                            <td>S/. 26</td>
+                            <td>S/. 43</td>
+                            <td>S/. 75</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-section">
+            <div class="product">
+                <img src="niditoamor.png" alt="Alfajores" class="product-image">
+                <div class="product-info">
+                    <h2>NIDITO DE AMOR</h2>
+                    <p>Hechos con una masa suave y crocante rellenas con mermelada de fresa.</p>
+                    <p><strong>PRECIO:</strong></p>
+                    <table class="price-table">
+                        <tr>
+                            <th>Cantidad</th>
+                            <th>¼</th>
+                            <th>½</th>
+                            <th>100</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"></td>
+                            <td>S/. 20</td>
+                            <td>S/. 35</td>
+                            <td>S/. 65</td>
+                        </tr>
+                        <tr>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="product-section">
+            <div class="product">
+                <img src="chescake.png" alt="Alfajores" class="product-image">
+                <div class="product-info">
+                    <h2>MINI CHEESECAKE</h2>
+                    <p>Base de galleta con un rico queso crema sobre la cual se coloca una jugosa pulpa de fruta fresca a elección.</p>
+                    <p><strong>PRECIO:</strong></p>
+                    <table class="price-table">
+                        <tr>
+                            <th>Sabor/cantidad</th>
+                            <th>¼</th>
+                            <th>½</th>
+                            <th>100</th>
+                        </tr>
+                        <tr>
+                            <td>De fresa, lúcuma y durazno</td>
+                            <td>S/. 36</td>
+                            <td>S/. 62.5</td>
+                            <td>S/. 100</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-footer text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Horarios de Atención</h5>
+                    <p>por terminar<br>
+                       ........</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contáctenos</h5>
+                    <p>WhatsApp: 9999999<br>
+                        Teléfono: 9999999<br>
+                        Correo: Marjud@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociales</h5>
+                    <br>
+                    <ul class="social-icons">
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-tiktok"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p class="copyright-text">© 2024 Pasteleria Marjud. Todos los derechos reservados.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
